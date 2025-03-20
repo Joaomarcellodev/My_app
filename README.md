@@ -22,7 +22,7 @@ O objetivo foi recriar a funcionalidade e o design da plataforma, com foco em um
 
 ### 📱 Mobile
 <div align="center">
-  <img height="400" src="INSIRA_O_LINK_DA_IMAGEM_MOBILE" alt="Prévia da Página no Mobile" />
+  <img height="400" src="https://github.com/Joaomarcellodev/Projeto_Flutter_Linketree/blob/main/git/mobile_flutter.png?raw=true" alt="Prévia da Página no Mobile" />
 </div>
 
 ---
