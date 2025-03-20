@@ -20,13 +20,6 @@ O objetivo foi recriar a funcionalidade e o design da plataforma, com foco em um
 
 ## 🌟 Prévia do Projeto
 
-### 💻 Desktop
-<div align="center">
-  <img height="200" src="INSIRA_O_LINK_DA_IMAGEM_DESKTOP" alt="Prévia da Página no Desktop" />
-</div>
-
----
-
 ### 📱 Mobile
 <div align="center">
   <img height="400" src="INSIRA_O_LINK_DA_IMAGEM_MOBILE" alt="Prévia da Página no Mobile" />
