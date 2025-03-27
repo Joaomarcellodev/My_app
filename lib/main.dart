@@ -34,95 +34,67 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            ClipOval(
-              child: Image.asset(
-                'assets/jm_profile.jpeg',
-                width: 200,
-                height: 200,
-                fit: BoxFit.cover,
-              ),
+            const CircleAvatar(
+              backgroundImage: AssetImage('assets/jm_profile.jpeg'),
+              radius: 100,
             ),
-
-            SizedBox(height: 40),
-            Text(
-              'Jm developer',
-              style: TextStyle(
-                color: Colors.white,
-                fontSize: 20,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
-            Text(
-              'Desenvolvedor Fullstack',
-              style: TextStyle(
-                color: Colors.white,
-                fontSize: 20,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
-            SizedBox(height: 10),
-            Container(width: 200, height: 2, color: Colors.white),
             SizedBox(height: 20),
-            Container(
-              width: 400,
-              height: 40,
-             decoration: BoxDecoration(
-              color: Colors.white,
-              border: Border.all(
-                color: Colors.teal
+            Text(
+              "João Marcello",
+              style: TextStyle(
+                color: Colors.white,
+                fontFamily: 'Pacifico',
+                fontSize: 30,
               ),
-              borderRadius: BorderRadius.circular(9),
-             ),
-              child: Center(
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Icon(Icons.phone, color: Colors.teal,),
-                    SizedBox(width: 5,),
-                    Text(
-                      '(86) 9 8810 9565',
-                      style: TextStyle(
-                        color: Colors.teal,
-                        fontSize: 20,
-                        fontWeight: FontWeight.bold,
-                      ) ,
-                    )
-                  ],
+            ),
+            SizedBox(height: 5),
+            Text(
+              'Developer Fullstack',
+              style: TextStyle(
+                color: Colors.white,
+                fontFamily: 'SourcePro',
+                fontSize: 20,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            const Divider(
+              height: 18,
+              indent: 180,
+              endIndent: 180,
+              color: Colors.white,
+            ),
+
+            Card(
+              child: SizedBox(
+                width: 500,
+                child: ListTile(
+                  title: Center(
+                    child: Text(
+                      '+55 86 9 8810-9565',
+                      style: TextStyle(color: Colors.teal),
+                    ),
+                  ),
+                  leading: Icon(Icons.phone, color: Colors.teal),
                 ),
               ),
             ),
-            SizedBox(height: 20,),
-             Container(
-              width: 400,
-              height: 40,
-             decoration: BoxDecoration(
-              color: Colors.white,
-              border: Border.all(
-                color: Colors.teal,
-              ),
-              borderRadius: BorderRadius.circular(9)
-             ),
-              child: Center(
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Icon(Icons.email , color: Colors.teal ,),
-                    SizedBox( width: 10,),
-                    Text(
+            SizedBox(width: 10),
+            Card(
+              child: SizedBox(
+                width: 500,
+                child: ListTile(
+                  title: Center(
+                    child: Text(
                       'joaomarcellobraz@gmail.com',
-                      style:TextStyle(
-                        color: Colors.teal,
-                        fontSize: 20,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    )
-                  ],
+                      style: TextStyle(color: Colors.teal),
+                    ),
+                  ),
+                  leading: Icon(Icons.mail, color: Colors.teal),
                 ),
               ),
             ),
-
-
           ],
         ),
       ),
