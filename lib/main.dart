@@ -61,8 +61,8 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             const Divider(
               height: 18,
-              indent: 180,
-              endIndent: 180,
+              indent: 80,
+              endIndent: 80,
               color: Colors.white,
             ),
 
